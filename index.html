@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAKETIERPVP | Official Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+        body { background-color: #06080f; color: #ffffff; font-family: 'Inter', sans-serif; overflow: hidden; }
+        .hero-glow { background: radial-gradient(circle at center, rgba(139, 92, 246, 0.15) 0%, transparent 70%); }
+        .btn-hover { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .btn-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 40px -10px rgba(139, 92, 246, 0.5); }
+        
+        .pulse-rankings { animation: pulse 2s infinite; }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(139, 92, 246, 0.4); }
+            70% { box-shadow: 0 0 0 15px rgba(139, 92, 246, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(139, 92, 246, 0); }
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen">
+
+    <div class="hero-glow absolute inset-0 z-0"></div>
+
+    <main class="relative z-10 text-center px-6">
+        <div class="mb-2">
+            <span class="text-[10px] font-black tracking-[0.5em] text-purple-500 uppercase">Competitive Minecraft</span>
+        </div>
+
+        <h1 class="text-6xl md:text-9xl font-black italic tracking-tighter mb-8 bg-gradient-to-b from-white to-zinc-800 bg-clip-text text-transparent uppercase pr-6">
+            FAKETIERPVP
+        </h1>
+
+        <div class="flex flex-col md:flex-row gap-5 justify-center items-center" id="buttonGrid">
+            <a href="rankings.html" class="btn-hover pulse-rankings block w-64 bg-purple-600 text-white font-black py-5 rounded-2xl tracking-widest text-xs uppercase">
+                View Rankings
+            </a>
+
+            <a href="https://discord.gg/yourlink" target="_blank" class="btn-hover w-64 bg-[#5865F2] text-white font-black py-5 rounded-2xl tracking-widest text-xs uppercase shadow-lg shadow-[#5865F2]/20">
+                Join Discord
+            </a>
+        </div>
+    </main>
+
+</body>
+</html>
